@@ -217,6 +217,16 @@
     padding: 120px 0;
  }
 
+ .visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     padding: 0;
+     overflow: hidden;
+     clip: rect(0, 0, 0, 0);
+     border: 0;
+ }
 
  .benefits-list {
      display: flex;
@@ -266,8 +276,17 @@
      padding-bottom: 60px;
  }
 
+ .team-member {
+     background-color: #FFFFFF;
+     border-radius: 0px 0px 4px 4px; 
+}
+
  .team-avatar {
     display: block;
+ }
+
+ .name-role {
+    padding: 32px 0;
  }
 
  .team-employees {
@@ -283,18 +302,6 @@
      margin-top: 120px;
  }
 
- .team-member {
-     background-color: #FFFFFF;
- }
-
- .img-margin {
-     margin-bottom: 32px;
- }
-
- .name-margin {
-     margin-bottom: 8px;
- }
-
  .team-name {
      font-family: "Roboto", sans-serif;
      font-weight: 500;
@@ -304,6 +311,8 @@
      letter-spacing: 0.02em;
      text-align: center;
      color: #2e2f42;
+     margin-bottom: 8px;
+     text-align: center;
  }
 
  .team-role {
@@ -312,8 +321,8 @@
      font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
-     text-align: center;
      color: #434455;
+     text-align: center;
  }
 
  /*========================================================*/
