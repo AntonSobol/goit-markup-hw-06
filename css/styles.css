@@ -167,6 +167,7 @@
 
  .hero-section {
      background: #2e2f42;
+    padding: 188px 0;
  }
 
  .hero-content {
@@ -213,8 +214,9 @@
  /*==================================*/
 
  .benefits-section {
-    padding: 188px 0;
+    padding: 120px 0;
  }
+
 
  .benefits-list {
      display: flex;
@@ -255,6 +257,7 @@
 
  .team-section {
      background: #f4f4fd;
+    padding: 120px 0;
  }
 
  .team-list {
