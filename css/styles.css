@@ -56,8 +56,7 @@
  /*===========  HEADER  ===========*/
 
  body {
-     font-family: "Roboto", 
-     sans-serif;
+     font-family: "Roboto", sans-serif;
      color: #434455;
      background: #ffffff;
  }
@@ -65,7 +64,7 @@
  .container {
      width: 1158px;
      padding: 0 15px;
-     margin: 0 auto;  
+     margin: 0 auto;
  }
 
  .header-container {
@@ -74,8 +73,8 @@
  }
 
  .page-navigation {
-    display: flex;
-    align-items: center;
+     display: flex;
+     align-items: center;
  }
 
  .menu {
@@ -133,7 +132,7 @@
      letter-spacing: 0.02em;
      color: #2e2f42;
      padding: 24px 0;
-    display: block;
+     display: block;
  }
 
  .menu-link:hover,
@@ -179,9 +178,10 @@
      text-align: center;
      padding-top: 118px;
      padding-bottom: 48px;
-     padding-left: auto;
-     padding-right: auto;
+     margin-left: auto;
+     margin-right: auto;
      color: #ffffff;
+     max-width: 496px;
  }
 
  .order-button {
@@ -209,15 +209,15 @@
 
  /*==================================*/
 
-.benefits-list {
-    display: flex;
-    gap: 24px;
-}
+ .benefits-list {
+     display: flex;
+     gap: 24px;
+ }
 
-.benefit-item {
-    width: 264px;
-    height: 104px;
-}
+ .benefit-item {
+     width: 264px;
+     height: 104px;
+ }
 
  .main-strategy {
      font-family: "Roboto", sans-serif;
@@ -255,6 +255,7 @@
      gap: 24px;
      padding-bottom: 60px;
  }
+
  .team-employees {
      font-family: "Roboto", sans-serif;
      font-weight: 700;
@@ -277,7 +278,7 @@
  }
 
  .name-margin {
-    margin-bottom: 8px;
+     margin-bottom: 8px;
  }
 
  .team-name {
@@ -322,13 +323,13 @@
  }
 
  .portfolio-list {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap ;
+     display: flex;
+     gap: 24px;
+     flex-wrap: wrap;
  }
 
  .portfolio-image-margin {
-    margin-bottom: 32px;
+     margin-bottom: 32px;
  }
 
  .portfolio-title {
@@ -342,7 +343,7 @@
  }
 
  .portfolio-category {
-    margin-bottom: 32px;
+     margin-bottom: 32px;
  }
 
  .portfolio-category {
@@ -366,11 +367,6 @@
      background: #2e2f42;
      padding-top: 60px;
  }
- .containe{
-    width: 212.3px;
-    height: 160px;
-    margin: 100px 820.25px 52px 125.45px;
- }
 
  .page-footer-logo-blue {
      font-family: "Raleway", sans-serif;
@@ -380,8 +376,9 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: #4d5ae5;
+     display: inline-block;
+     margin-bottom: 8px;
  }
-
 
  .page-logo-white {
      font-family: "Raleway", sans-serif;
@@ -400,6 +397,7 @@
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #f4f4fd;
+     max-width: 264px;
  }
 
  /*========================================================*/
@@ -418,4 +416,8 @@
     padding-bottom: ;
 
     margin: 100px 820.25px 52px 125.45px;
+
+    .header-container {
+            display: flex;
+            align-items: center;
 }
