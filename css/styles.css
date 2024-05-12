@@ -760,6 +760,10 @@
      fill: #FFFFFF;
  }
 
+ .revivew-form-checkbox:focus+.review-form-checkbox-label .review-form-own-checkbox {
+     outline: 2px solid rgba(0, 0, 255, 0.5);
+ }
+
  .review-form-own-checkbox {
      display: inline-flex;
      justify-content: center;
