@@ -37,7 +37,7 @@
           >
           <!--=================================================  MENU  =================================================-->
 
-          <ul class="menu">
+          <ul class="menu page-header-menu">
             <li class="menu-item">
               <a class="menu-link line" href="./index.html">Studio</a>
             </li>
@@ -49,13 +49,11 @@
             </li>
           </ul>
         </nav>
+
+        <!-- Додав кнопку бургер -->
         <button class="mobile-open-btn" type="button">
-          <svg class="mobile-open-btn-icon">
-            <use
-              href="./images/icons.svg#icon-burger-svg"
-              width="24"
-              height="24"
-            ></use>
+          <svg class="mobile-open-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-svg"></use>
           </svg>
         </button>
         <!--Контактну інформацію огортаємо в тег <address>-->
@@ -671,5 +669,42 @@
         </form>
       </div>
     </div> -->
+    <!--========== MOBILE MENU ==========-->
+    <div class="mobile-menu">
+      <div class="container">
+        <button class="mobile-menu-close-btn">
+          <svg class="mobile-menu-close-btn-icon">
+            <use href=""></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-list-item">
+              <a href="" class="mobile-menu-list-link"></a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="" class="mobile-menu-list-link"></a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="" class="mobile-menu-list-link"></a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-contact">
+            <li>
+              <a
+                class="mobile-menu-link-contact"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu-link-contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </body>
 </html>
