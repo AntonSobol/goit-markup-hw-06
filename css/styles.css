@@ -39,9 +39,8 @@ button:focus {
 }
 
 /* Для всіх секцій */
-.section-paddings {
-  /* padding-top: 60px; */
-  padding-bottom: 60px;
+.section-margin {
+  margin-bottom: 120px;
 }
 
 body {
@@ -354,6 +353,8 @@ body {
 
 /*=========  1 section  =========*/
 
+/*===============================*/
+
 .hero-section {
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -405,6 +406,8 @@ body {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*===========  Телефон  ===========*/
 
 @media screen and (min-width: 320px) {
   .hero-section {
@@ -460,6 +463,8 @@ body {
   }
 }
 
+/*===========  Планшет  ===========*/
+
 @media screen and (min-width: 768px) {
   .hero-section {
     max-width: 768px;
@@ -485,6 +490,8 @@ body {
   }
 }
 
+/*===========  Десктоп  ===========*/
+
 @media screen and (min-width: 1158px) {
   .hero-section {
     max-width: 1158px;
@@ -509,6 +516,10 @@ body {
 /*===========  BENEFITS  ===========*/
 
 /*===========  2 section  ==========*/
+
+/*==================================*/
+
+/*===========  Телефон  ===========*/
 
 @media screen and (min-width: 320px) {
   .visually-hidden {
@@ -575,6 +586,8 @@ body {
   }
 }
 
+/*===========  Планшет  ===========*/
+
 @media screen and (min-width: 768px) {
 }
 
@@ -584,9 +597,49 @@ body {
 
 .benefits-list {
   column-gap: 24px;
+  row-gap: 72px;
 }
 
-.main-description-strategy {
+.benefit-item {
+  max-width: 356px;
+}
+
+.container {
+  /* margin-bottom: 120px; */
+}
+
+/*===========  Десктоп  ===========*/
+
+@media screen and (min-width: 1158px) {
+  .icon-container {
+    display: flex;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+  }
+
+  .benefits-list {
+    flex-wrap: nowrap;
+    margin-bottom: 120px;
+  }
+
+  .main-strategy {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .main-description-strategy {
+    font-weight: 400;
+  }
 }
 
 /* @media screen and (min-width: 320px) {
