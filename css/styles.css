@@ -40,7 +40,7 @@ button:focus {
 
 /* Для всіх секцій */
 .section-paddings {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   padding-bottom: 60px;
 }
 
@@ -172,6 +172,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 75px;
 }
 
 .page-logo-blue {
@@ -183,7 +184,6 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
-  margin-left: 15px;
 }
 
 .page-logo {
@@ -336,3 +336,262 @@ body {
     justify-content: flex-end;
   }
 }
+
+@media screen and (min-width: 1158px) {
+  .menu-contact {
+    gap: 40px;
+  }
+
+  .page-logo-blue {
+    margin-right: 76px;
+    margin-left: 0px;
+  }
+}
+
+/*===============================*/
+
+/*===========  HERRO  ===========*/
+
+/*=========  1 section  =========*/
+
+.hero-section {
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/herro/herro_background_people-office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 320px;
+  height: 432px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 96px;
+  padding: 72px 0 72px;
+}
+
+.hero-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
+  margin-left: 52px;
+  margin-right: 52px;
+  color: #ffffff;
+  max-width: 496px;
+}
+
+.order-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 16px 0;
+  width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #4d5ae5;
+  display: block;
+  min-width: 169px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) {
+  .hero-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/herro/herro_background_people-office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 320px;
+    height: 432px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 96px;
+    padding: 72px 0 72px;
+  }
+
+  .hero-content {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-left: 52px;
+    margin-right: 52px;
+    margin-bottom: 72px;
+    color: #ffffff;
+    max-width: 496px;
+  }
+
+  .order-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 16px 0;
+    width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #4d5ae5;
+    display: block;
+    min-width: 169px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    height: 436px;
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
+
+  .hero-content {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+  }
+  .menu-contact {
+    row-gap: 12px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    max-width: 1158px;
+    height: 600px;
+    padding-bottom: 188px;
+    padding-top: 188px;
+    margin-bottom: 120px;
+  }
+
+  .hero-content {
+    margin-bottom: 48px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/*==================================*/
+
+/*===========  BENEFITS  ===========*/
+
+/*===========  2 section  ==========*/
+
+@media screen and (min-width: 320px) {
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .benefits-list {
+    display: flex;
+    gap: 72px;
+    flex-wrap: wrap;
+  }
+
+  .benefit-item {
+    /* width: 264px; */
+    max-width: 320px;
+  }
+
+  /* .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+  } */
+
+  .main-strategy {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+
+  .main-description-strategy {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .icon-container {
+    display: none;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+.main-strategy {
+  text-align: left;
+}
+
+.benefits-list {
+  column-gap: 24px;
+}
+
+.main-description-strategy {
+}
+
+/* @media screen and (min-width: 320px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1158px) {
+} */
