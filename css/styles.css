@@ -616,20 +616,8 @@ body {
   }
 
   .benefit-item {
-    /* width: 264px; */
     max-width: 320px;
   }
-
-  /* .icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;
-  } */
 
   .main-strategy {
     font-family: "Roboto", sans-serif;
@@ -663,9 +651,6 @@ body {
 /*===========  Планшет  ===========*/
 
 @media screen and (min-width: 768px) {
-  /* .benefits-section {
-    margin-bottom: 96px;
-  } */
   .main-strategy {
     text-align: left;
   }
