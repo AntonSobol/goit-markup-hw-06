@@ -38,11 +38,6 @@ button:focus {
   background: #404bbf;
 }
 
-/* Для всіх секцій */
-/* .section-margin {
-  margin-bottom: 120px;
-} */
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -292,22 +287,57 @@ body {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  /* opacity: 0; */
-  /* visibility: hidden; */
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
   overflow-y: auto;
 }
 
 .mobile-menu.is-open {
-  /* opacity: 1;
-  visibility: visible; */
   transform: translateX(0%);
+}
+
+.mobile-menu-list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 168px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mobile-menu-list-item:hover,
+.mobile-menu-list-item:focus {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
+}
+
+.mobile-menu-contact {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  margin-bottom: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.mobile-menu-link-contact:hover,
+.mobile-menu-link-contact:focus {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #4d5ae5;
+}
+
+.icon-soci {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -460,6 +490,10 @@ body {
     min-width: 169px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero-section {
   }
 }
 
@@ -1081,6 +1115,11 @@ body {
   align-items: center;
 }
 
+.subscribe-button.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*==  svg  ==*/
 .subscribe-button-icon {
   margin-left: 16px;
@@ -1227,7 +1266,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 999999;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
@@ -1248,8 +1287,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -1480,6 +1519,15 @@ body {
 
 /* ===========  Телефон  =========== */
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+}
+
+/* ===========  Телефон  =========== */
+
 /* @media screen and (min-width: 320px) {
 } */
 
@@ -1492,3 +1540,7 @@ body {
 
 /* @media screen and (min-width: 1158px) {
 } */
+
+/* 1x - 96dpi
+2x - 192dpi
+3x - 288dpi */
